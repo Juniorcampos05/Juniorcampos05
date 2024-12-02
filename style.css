@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 180vh; /* Altura da tela inteira */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #d61cd6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.button-container {
+    display: flex; /* Utiliza flexbox para alinhar os botões */
+    gap: 90px; /* Espaçamento entre os botões */
+}
+
+.btn1{
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    border-radius: 20px;
+    width: 90px;  
+    height: 50px;    
+    cursor: pointer;  
+    animation: moversim 6s infinite alternate-reverse; /* Animação e tempo de transição */
+}
+
+.btn2{
+    
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    border-radius: 20px;
+    width: 90px;  
+    height: 50px;    
+    cursor: pointer;  
+    animation: movernão 6s infinite alternate-reverse; 
+}
+
+.btn1:hover{
+    cursor: pointer;
+    background: rgb(54, 52, 52);
+    border: 0px solid rgb(0, 0, 0),inset  0px 0px 6px 2px rgb(233, 19, 240);;
+    box-shadow: 0px 0px 6px 6px rgb(0, 0, 0);
+    transform: scale(1.0);
+    border: transparent;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.btn2:hover{    /* Cria uma forma de neom no fundo */
+    cursor: pointer;
+    background: rgb(54, 52, 52);
+    border: 0px solid rgb(0, 0, 0),inset  0px 0px 6px 2px rgb(233, 19, 240);;
+    box-shadow: 0px 0px 6px 6px rgb(0, 0, 0);
+    transform: scale(1.0);
+    border: transparent;
+    border-radius: 20px;
+    background: transparent;
+}
+
+h2 {
+    margin-bottom: 50px; /* Espaçamento abaixo do título */
+    background: transparent;
+}
+
+#message {
+    margin-top: 90px; /* Espaçamento acima da mensagem */
+    font-size: 18px; /* Tamanho da fonte da mensagem */
+}
+
+                                        /* A partir daqui foi a animação */
+
+.background {
+position: fixed; /* Fixa a div no fundo */
+top: 0; /* Alinha ao topo */
+left: 0; /* Alinha à esquerda */
+width: 100%; /* Largura total */
+height: 100%; /* Altura total */
+background: linear-gradient(50deg,rgb(248, 31, 31),rgb(46, 39, 243),rgb(234, 45, 45)); /* Gradiente inicial */
+background-size: 400% 400%; /* Tamanho do fundo para animação suave */
+animation: gradientAnimation 10s ease infinite; /* Animação do gradiente */
+
+}
+.floating-button {
+    background-color: #201f21;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    animation-duration: 20s;
+    animation: alternate-reverse;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes gradientAnimation {
+0% {
+    background-position: 10% 50%; /* Posição inicial do gradiente */
+}
+50% {
+    background-position: 100% 50%; /* Posição intermediária do gradiente */
+}
+100% {
+    background-position: 10% 50%; /* Retorna à posição inicial */
+}}
+
+@keyframes moversim {  
+0% {  
+transform: translateX(-150px);  
+}  
+100% {   
+transform: translateX(250px);  
+} }
+
+    @keyframes movernão {  
+        0% {  
+    transform: translateX(250px);  
+        }  
+        100% { 
+    transform: translateX(-150px);  
+        }  
+} 
