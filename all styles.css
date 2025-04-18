@@ -1,0 +1,66 @@
+body{
+    background-image: url(https://i.pinimg.com/736x/e5/2e/39/e52e3997d200b0899e2839e330d37b5e.jpg);
+    background-attachment: fixed;
+    
+}
+h1,h2 {
+    color: rgb(143, 86, 29);
+    
+}
+.links{
+    position: fixed;       /* fixa o menu na tela */
+    top: 170px;             /* distância do topo da página */
+    right: 50px;           /* distância da borda direita */
+    display: flex;         /* alinha os links em linha */
+    gap: 40px;             /* espaço entre os links */
+    background-color: rgba(255, 255, 255, 0.196); /* fundo semi-transparente opcional */
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.direita{
+    display: block;
+    margin-left: auto;
+    width: 620px;
+    height: auto;
+}
+.Paragrafo{
+    
+    max-width: 600px;       /* Limita a largura máxima do texto */
+    margin: 0 auto;         /* Centraliza horizontalmente */
+    padding: 20px;          /* Espaçamento interno para "respirar" */
+    line-height: 1.5;       /* Espaçamento entre linhas para melhor leitura */
+    font-size: 36px;        /* Tamanho confortável da fonte */
+    color: #000000;            /* Cor do texto para bom contraste */
+}
+.imagem{
+    border: 20px solid rgb(221, 128, 40); /* largura 3px, estilo sólido, cor preta */
+    border-radius: 30px;
+    object-fit: cover;
+    border: 3px solid #f49b15;
+    box-shadow:
+        0 0 0px #d1902d,
+        0 0 10px #db820d,
+        0 0 20px #f49b15,
+        0 0 60px #f49315;
+    border-radius: 8px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0%, 100% {
+    box-shadow:
+        0 0 5px #f49315,
+        0 0 10px #f49315,
+        0 0 20px #f49315,
+        0 0 80px #f49315;
+    }
+    50% {
+    box-shadow:
+        0 0 10px #f49315,
+        0 0 20px #f49315,
+        0 0 30px #f49315,
+        0 0 70px #f49315;
+    }
+    }
