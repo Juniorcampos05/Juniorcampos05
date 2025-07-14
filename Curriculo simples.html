@@ -1,0 +1,208 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Currículo simples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importação do Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+    body {
+        background: #111;
+        color: #fff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+    .curriculo-container {
+        background: #181818;
+        border: 3px solid #00ff90;
+        border-radius: 18px;
+        box-shadow: 0 0 25px #00ff90, 0 0 8px #fff inset;
+        max-width: 500px;
+        width: 90%;
+        padding: 32px 28px 24px 28px;
+    }
+    .titulo {
+        text-align: center;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+        color: #00ff90;
+        text-shadow: 0 0 8px #00ff90;
+    }
+    .subtitulo {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+        color: #fff;
+        opacity: 0.8;
+    }
+    .section {
+        margin-bottom: 18px;
+        border-left: 4px solid #00ff90;
+        padding-left: 16px;
+        position: relative;
+    }
+    .section-header {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #00ff90;
+        cursor: pointer;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+        user-select: none;
+        display: flex;
+        align-items: center;
+    }
+    .section-header:hover {
+        color: #fff;
+        text-shadow: 0 0 6px #00ff90;
+    }
+    .arrow {
+        margin-right: 8px;
+        font-size: 1.1em;
+        transition: transform 0.3s;
+    }
+    .section-content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s cubic-bezier(.4,2,.6,1), opacity 0.3s;
+        margin-bottom: 0;
+    }
+    .section.open .section-content {
+        max-height: 400px;
+        opacity: 1;
+        margin-bottom: 8px;
+    }
+    .section.open .arrow {
+        transform: rotate(90deg);
+    }
+    .info {
+        margin: 0 0 6px 0;
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.5px;
+    }
+    .habilidades-lista {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 6px;
+    }
+    .habilidade {
+        background: #222;
+        border: 1.5px solid #00ff90;
+        border-radius: 8px;
+        padding: 6px 14px;
+        color: #00ff90;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+        box-shadow: 0 0 6px #00ff9040;
+        transition: background 0.2s, color 0.2s;
+        display: flex;
+        align-items: center;
+    }
+    .habilidade i {
+        color: inherit;
+        margin-right: 6px;
+        min-width: 18px;
+        text-align: center;
+    }
+    .habilidade:hover {
+        background: #00ff90;
+        color: #181818;
+    }
+    @media (max-width: 600px) {
+        .curriculo-container {
+        padding: 18px 6px 14px 6px;
+        }
+        .titulo {
+        font-size: 1.4rem;
+        }
+    }
+    </style>
+    </head>
+    <body>
+    <div class="curriculo-container">
+    <div class="titulo">João Silva</div>
+    <div class="subtitulo">Desenvolvedor Front-End • São Paulo, SP</div>
+    
+    <div class="section" id="sec-contato">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">&#9654;</span> Contato
+        </div>
+        <div class="section-content">
+        <div class="info">Email: joao.silva@email.com</div>
+        <div class="info">Telefone: (11) 91234-5678</div>
+        <div class="info">LinkedIn: linkedin.com/in/joaosilva</div>
+        </div>
+    </div>
+    
+    <div class="section" id="sec-idade">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">&#9654;</span> Idade
+        </div>
+        <div class="section-content">
+        <div class="info">28 anos</div>
+        </div>
+    </div>
+    
+    <div class="section" id="sec-endereco">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">&#9654;</span> Endereço
+        </div>
+        <div class="section-content">
+        <div class="info">Rua das Flores, 123</div>
+        <div class="info">Bairro Jardim</div>
+        <div class="info">São Paulo - SP</div>
+        </div>
+    </div>
+    
+    <div class="section" id="sec-formacao">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">&#9654;</span> Formação
+        </div>
+        <div class="section-content">
+        <div class="info"><b>Bacharelado em Ciência da Computação</b></div>
+        <div class="info">Universidade XYZ</div>
+        <div class="info">2016 - 2020</div>
+        </div>
+    </div>
+    
+    <div class="section" id="sec-habilidades">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">&#9654;</span> Habilidades
+        </div>
+        <div class="section-content">
+        <div class="habilidades-lista">
+            <div class="habilidade"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="habilidade"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="habilidade"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="habilidade"><i class="fab fa-react"></i> React</div>
+            <div class="habilidade"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="habilidade"><i class="fas fa-pencil-ruler"></i> UI/UX</div>
+            <div class="habilidade"><i class="fas fa-mobile-alt"></i> Responsividade</div>
+            <div class="habilidade"><i class="fas fa-language"></i> Inglês Avançado</div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+    function toggleSection(header) {
+        const section = header.parentElement;
+        const isOpen = section.classList.contains('open');
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('open'));
+        if (!isOpen) section.classList.add('open');
+    }
+    </script>
+    </body>
+    </html>
