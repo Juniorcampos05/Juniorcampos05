@@ -1,40 +1,87 @@
-# 👋 Olá! Eu sou Adalberto!
+👋 Olá! Eu sou Adalberto!
+💻 Estudante de Engenharia de Software | Desenvolvedor Full Stack em Formação | Brasil 🇧🇷
 
-## Desenvolvedor Front-End | 30 anos | Brasil 🇧🇷
+Sou um desenvolvedor de software em formação, apaixonado por tecnologia, inovação e aprendizado contínuo. Atualmente, curso Engenharia de Software (6º período) e venho desenvolvendo habilidades sólidas em desenvolvimento frontend e backend, sempre buscando evoluir por meio de projetos práticos e estudos constantes.
 
-Sou um desenvolvedor apaixonado por tecnologia e sempre em busca de novos desafios.
-Com experiência em **Python**, **HTML**, **CSS** e **JavaScript**, estou cursando engenharia de software no quarto periodo e estou em busca de um estagio para conseguir ampliar meus conhecimentos como novas tecnologias e expandir meus conhecimentos.
+Possuo experiência com Python, HTML, CSS, JavaScript e Java, além de trabalhar com frameworks e bibliotecas como Flask, Node.js e React. Tenho facilidade para aprender novas tecnologias, resolver problemas e transformar ideias em soluções digitais eficientes.
 
+Estou em busca de uma oportunidade de estágio para aplicar meus conhecimentos na prática, colaborar com equipes experientes e contribuir para o desenvolvimento de sistemas modernos, escaláveis e de alta qualidade.
 
----
+🛠️ Habilidades Técnicas
+🚀 Linguagens de Programação
 
-## 🛠️ Habilidades
+Python
 
-- **Linguagens de Programação:**
-  - Python
-  - HTML
-  - CSS
-  - JavaScript
+JavaScript
 
+Java
 
+HTML5
 
----
+CSS3
 
-## 📚 Aprendizados Recentes
+⚙️ Frameworks e Tecnologias
+
+Flask
+
+Node.js
+
+React
+
+Desenvolvimento de APIs REST
+
+Integração Frontend & Backend
+
+🧠 Conceitos e Práticas
+
+Lógica de Programação
+
+Programação Orientada a Objetos (POO)
+
+Git e GitHub
+
+Design Responsivo
+
+Boas Práticas de Código
+
+Versionamento de Código
+
+📚 Aprendizados Recentes
 
 Atualmente, estou me aprofundando em:
-- Desenvolvimento de APIs com Python.
-- Node js 
-- Princípios de design responsivo.
-- Criação de pequenos projetos
-  
----
 
-## 📫 Vamos nos conectar!
+Desenvolvimento de APIs com Python (Flask)
 
-- [instagram](https://www.instagram.com/elementors_dev/profilecard/?igsh=MWV3ZWt1aHB6bDc1Yg==)
-- Email: mendcampps@gmail.com
+Backend com Node.js
 
----
+Criação de aplicações Full Stack
 
-Obrigado por visitar meu perfil! Estou sempre aberto a colaborações e novas oportunidades. 🚀
+Princípios de arquitetura de software
+
+Desenvolvimento responsivo
+
+Criação de projetos práticos para portfólio
+
+🎯 Objetivos Profissionais
+
+Conquistar uma vaga de estágio em desenvolvimento de software
+
+Evoluir como desenvolvedor Full Stack
+
+Aprimorar conhecimentos em backend e frontend
+
+Trabalhar com projetos reais e times colaborativos
+
+Construir uma carreira sólida na área de tecnologia
+
+📫 Vamos nos conectar!
+
+📱 Instagram:
+🔗 @elementors_dev
+ In www.linkedin.com/in/adalberto-silva-campos-júnior-146429256
+
+📧 Email:
+✉️ mendcampps@gmail.com
+
+⭐ Obrigado por visitar meu perfil!
+Estou sempre aberto a novas oportunidades, colaborações e desafios. Vamos construir algo incrível juntos! 🚀💙
